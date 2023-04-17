@@ -1,0 +1,23 @@
+
+.main {
+  grid-area: main;
+  background-color: #FFFFFF;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+}
+
+.main img {
+  max-width: max-content;
+}
+
+.profile_content_wrapper {
+  padding: 20px;
+}
+
+.posts {
+
+}
+
+.item {
+  
+}

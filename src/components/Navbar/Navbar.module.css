@@ -1,0 +1,22 @@
+.nav {
+  grid-area: nav;
+  background-color: var(--primary);
+  border-radius: var(--borderRadius);
+  padding: 20px;
+}
+
+.item {
+  height: 30px;
+  background-color: var(--primary);
+}
+
+.item:hover {
+  background-color: darken(var(--primary), 20%);
+  cursor: pointer;
+}
+
+.item > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}

@@ -1,0 +1,17 @@
+.header {
+  grid-area: header;
+  background-color: var(--primary);
+  border-radius: var(--borderRadius);
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+}
+.main_title {
+  color: #ffffff;
+  font-size: 28px;
+}
