@@ -1,5 +1,6 @@
 :root {
-  --primary: rgb(120, 165, 244);
+  --primary: #6350D9;
+  --borderRadius: 16px;
 }
 
 .app-wrapper {
@@ -15,23 +16,51 @@
 .header {
   grid-area: header;
   background-color: var(--primary);
+  border-radius: var(--borderRadius);
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .header img {
   width: 40px;
   height: 40px;
 }
-
+.main_title {
+  color: #ffffff;
+  font-size: 28px;
+}
 .nav {
   grid-area: nav;
-  background-color: var(--primary);;
+  background-color: var(--primary);
+  border-radius: var(--borderRadius);
+  padding: 20px;
+}
+
+.nav > .item {
+  height: 30px;
+  background-color: var(--primary);
+}
+
+.nav > .item:hover {
+  background-color: darken(var(--primary), 20%);
+  cursor: pointer;
+}
+
+.nav > .item > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .main {
   grid-area: main;
-  background-color: pink;
+  background-color: #FFFFFF;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
 }
 
 .main img {
   max-width: max-content;
 }
+
