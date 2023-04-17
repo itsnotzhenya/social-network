@@ -1,13 +1,14 @@
 import React from 'react';
-import s from './Profile.module.css'
+import { MyPosts } from './MyPosts';
+import s from './Profile.module.css';
 
 export const Profile = () => {
   return (
     <div className={s.main}>
       <div>
         <img
-        style={{maxWidth: '1000px'}}
-        className={s.profile_top_img}
+          style={{ maxWidth: '1000px' }}
+          className={s.profile_top_img}
           src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
           alt="background"
         />
@@ -18,11 +19,7 @@ export const Profile = () => {
           alt="avatar"
         />
         <div>Profile Description</div>
-        <div className={s.posts}>
-          <div>Create new post block</div>
-          <div className={s.item}>Post 1</div>
-          <div className={s.item}>Post 2</div>
-        </div>
+        <MyPosts />
       </div>
     </div>
   );
