@@ -15,9 +15,9 @@ export const MyPosts: React.FC<Props> = () => {
         </div>
       </div>
       <div className={s.posts}>
-        <Post />
-        <Post />
-        <Post />
+        <Post message="Hey, how are u?" likesCount={1} />
+        <Post message="Have a good day" likesCount={5} />
+        <Post message="Hi" likesCount={2} />
       </div>
     </div>
   );

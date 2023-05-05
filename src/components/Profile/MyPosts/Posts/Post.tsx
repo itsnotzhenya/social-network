@@ -1,9 +1,12 @@
 import React from 'react';
 import s from './Post.module.css';
 
-type Props = {};
+type Props = {
+  message: string;
+  likesCount: number;
+};
 
-export const Post: React.FC<Props> = () => {
+export const Post: React.FC<Props> = ({ message, likesCount }) => {
   return (
     <div className={s.item}>
       <img
@@ -11,9 +14,10 @@ export const Post: React.FC<Props> = () => {
         src="https://cdn-icons-png.flaticon.com/512/1176/1176433.png"
         alt="avatar"
       />
-      Post 1
+      {message}
       <div>
-        <span>Like</span>
+        <button>Like</button>
+        <span>{likesCount}</span>
       </div>
     </div>
   );
