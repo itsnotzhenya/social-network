@@ -2,7 +2,9 @@ import React from 'react';
 import { MyPosts } from './MyPosts';
 import s from './Profile.module.css';
 
-export const Profile = () => {
+type Props = {};
+
+export const Profile: React.FC<Props> = () => {
   return (
     <div className={s.main}>
       <div>
@@ -15,6 +17,7 @@ export const Profile = () => {
       </div>
       <div className={s.profile_content_wrapper}>
         <img
+          className={s.avatar}
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC4U0lJ-T1fI5y0Oee2mtbC2snM0EP1fhCN-I9kAIdaNjuHqGrG9MLdlAbfBTG8YsxiwI&usqp=CAU"
           alt="avatar"
         />
