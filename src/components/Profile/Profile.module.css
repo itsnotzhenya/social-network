@@ -1,12 +1,4 @@
-
-.main {
-  grid-area: main;
-  background-color: #FFFFFF;
-  border-radius: var(--borderRadius);
-  overflow: hidden;
-}
-
-.main img {
+.profile img {
   max-width: max-content;
 }
 

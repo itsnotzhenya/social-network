@@ -6,7 +6,7 @@ type Props = {};
 
 export const Profile: React.FC<Props> = () => {
   return (
-    <div className={s.main}>
+    <div className={s.profile}>
       <div>
         <img
           style={{ maxWidth: '1000px' }}
@@ -18,7 +18,7 @@ export const Profile: React.FC<Props> = () => {
       <div className={s.profile_content_wrapper}>
         <img
           className={s.avatar}
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC4U0lJ-T1fI5y0Oee2mtbC2snM0EP1fhCN-I9kAIdaNjuHqGrG9MLdlAbfBTG8YsxiwI&usqp=CAU"
+          src="https://cdn-icons-png.flaticon.com/512/1176/1176433.png"
           alt="avatar"
         />
         <div>Profile Description</div>

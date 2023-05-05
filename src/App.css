@@ -12,3 +12,12 @@
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
 }
+
+.app-wrapper-content {
+  grid-area: main;
+  background-color: #6350D9;
+  background-color: #FFFFFF;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  min-height: 80vh;
+}
